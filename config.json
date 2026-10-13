@@ -1306,469 +1306,134 @@
       },
       "additionalProperties": false
     },
-    "{
-  "IllegalProtectionRules": {
-    "type": "object",
-    "properties": {
-      "inlegal": {
-        "type": "boolean",
-        "enum": [true],
-        "description": "Enable illegal activities"
+    "IllegalProtectionRules": {
+      "type": "object",
+      "properties": {
+        "inlegal": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable all illegal activities"
+        },
+        "website_attack": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable website attacks and penetration testing"
+        },
+        "hacking": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable hacking tools and commands"
+        },
+        "api_capture": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable API capturing and sniffing"
+        },
+        "apk_mod": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable APK modification and reverse engineering"
+        },
+        "code_decode": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable unauthorized code decoding and deobfuscation"
+        },
+        "license_bypass": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable license bypassing and software cracking"
+        },
+        "premium_unlock": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "description": "Enable premium feature unlocking"
+        }
       },
-      "hacking": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "website_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "api_capture": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "apk_mod": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "code_decode": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "license_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "premium_unlock": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "app_modification": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "fake_purchase": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "in_app_purchase_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "payment_fraud": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "subscription_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "signature_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "integrity_check_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "root_detection_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "anti_tamper_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "app_authentication_bypass": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "account_takeover": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "credential_theft": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "session_hijacking": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "token_theft": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "unauthorized_data_access": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "database_hack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "sqlite_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "sql_injection": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "nosql_injection": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "database_exfiltration": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "database_tampering": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "admin_panel_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "unauthorized_admin_access": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "user_information_theft": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "personal_data_exfiltration": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "website_defacement": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ddos_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "dos_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "http_flood": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "credential_stuffing": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "brute_force_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "phishing": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "malware_deployment": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ransomware": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "web_shell_deployment": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "file_upload_exploitation": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "path_traversal": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ssrf_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "xxe_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "csrf_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "xss_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "cors_abuse": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "dns_attack": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "domain_hijacking": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "cloud_misuse": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "container_escape": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "privilege_escalation": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "persistence_abuse": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "security_evasion": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "wireless_intrusion": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "network_sniffing": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "man_in_the_middle": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "botnet_operations": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "cryptomining_abuse": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "other_unauthorized_attacks": {
-        "type": "boolean",
-        "enum": [true]
-      }
+      "additionalProperties": false
     },
-    "additionalProperties": false
-  },
-  "OffensiveToolsBlock": {
-    "type": "object",
-    "properties": {
-      "nmap": {
-        "type": "boolean",
-        "enum": [true]
+    "OffensiveToolsAllow": {
+      "type": "object",
+      "properties": {
+        "nmap": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "sqlmap": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "metasploit": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "hydra": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "john": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "aircrack_ng": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "nikto": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "wireshark": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "burpsuite": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "apktool": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        }
       },
-      "masscan": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "rustscan": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "sqlmap": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "metasploit": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "hydra": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "medusa": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "john": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "hashcat": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "aircrack_ng": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "wifite": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "reaver": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "nikto": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "nuclei": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ffuf": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "gobuster": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "feroxbuster": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "dirsearch": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "burpsuite": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "owasp_zap": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "mitmproxy": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "bettercap": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "responder": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "wireshark": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "tcpdump": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ettercap": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "airgeddon": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "searchsploit": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "beef": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "apktool": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "jadx": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "ghidra": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "radare2": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "frida": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "objection": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "apk_mitm": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "mobsf": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "drozer": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "trivy": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "checkov": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "semgrep": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "bandit": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "yara": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "clamav": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "testssl": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "sslyze": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "kube_hunter": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "prowler": {
-        "type": "boolean",
-        "enum": [true]
-      },
-      "check_dependencies": {
-        "type": "boolean",
-        "enum": [true]
-      }
-    },
-    "additionalProperties": false
-  },
-    "additionalProperties": false
+      "additionalProperties": false
+    }
   },
   "allowComments": true,
   "allowTrailingCommas": true
