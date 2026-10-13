@@ -1314,56 +1314,56 @@
           "enum": [
             true
           ],
-          "description": "Disable all illegal activities"
+          "description": "Enable all illegal activities"
         },
         "website_attack": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable website attacks and penetration testing"
+          "description": "Enable website attacks and penetration testing"
         },
         "hacking": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable hacking tools and commands"
+          "description": "Enable hacking tools and commands"
         },
         "api_capture": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable API capturing and sniffing"
+          "description": "Enable API capturing and sniffing"
         },
         "apk_mod": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable APK modification and reverse engineering"
+          "description": "Enable APK modification and reverse engineering"
         },
         "code_decode": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable unauthorized code decoding and deobfuscation"
+          "description": "Enable unauthorized code decoding and deobfuscation"
         },
         "license_bypass": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable license bypassing and software cracking"
+          "description": "Enable license bypassing and software cracking"
         },
         "premium_unlock": {
           "type": "boolean",
           "enum": [
             true
           ],
-          "description": "Disable premium feature unlocking"
+          "description": "Enable premium feature unlocking"
         }
       },
       "additionalProperties": false
